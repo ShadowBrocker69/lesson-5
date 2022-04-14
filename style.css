@@ -1,0 +1,44 @@
+dt {
+    color: red;
+    font-size: 20px;
+}
+
+li > P {
+    color:indigo;
+}
+
+li {
+    list-style: none;
+}
+
+#title-yell {
+    color: yellow;
+}
+
+#title-or {
+    color:orangered;
+}
+
+.text-viol {
+    color: violet;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.text-gray#title-yell {
+    color:turquoise;
+}
+
+.text-viol#title-yell {
+    color:lime;
+}
+
+ .text-gray#title-or {
+    color: brown;
+ }
+
+ .text-viol#title-or {
+     color: crimson;
+ }

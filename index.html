@@ -8,6 +8,76 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <h1>Типы селекторов</h1>
+    <dl>
+        <dt>По названию элемента:</dt>
+            <dd>Данный селектор применяется ко всем элементам с определённым тегом. 
+                <p> Например: h1 {color: blue;} </p>
+            </dd> 
+        <dt>По id:</dt>
+            <dd>
+                Сначала надо присвоить элементу id после чего обратиться в css к этому id и задать ему необходимы параметры, но использовать один id можно лишь единожды
+                <p> Например: #title {color: aqua;} </p>
+                <p> Обращение к id: id="title"</p>
+            </dd>
+        <dt>По классу:</dt>
+            <dd>Аналогичено id, но можно применять сколько угодно раз
+                <p> Например: .text {color: green;}</p>
+                <p> Обращение к классу: class="text"</p>            
+            </dd>
+        <dt>По нескольким классам:</dt>
+            <dd>
+                 Позволяет "совместить" несколько зараенее созданных классов в один и присвоить этому селектору определённые параметры. Т.е, если в тег вписать оба класса, то используются параметры из этой комбинациию 
+                 <p> Например: .text {color: green;} .text2 {color: gray}</p>
+                 <p> Обращение к классу: class="text text2"</p> 
+            </dd>
+        <dt>По нескольким id:</dt>
+            <dd> Аналогичено нескольким классам </dd>
+        <dt>По классу и id:</dt>
+            <dd> Аналогично нескольким классам, но в данном случае совмещаются и класс, и id 
+                <p> Например: #title {color: aqua;}    .text {color: red;}</p>
+                <p> Обращение к классу + id: class="text" id="text"</p> 
+            </dd>
+        <dt>По вложенности:</dt>
+            <dd>
+                <p> Например: .text {color: green;}</p>
+                <p> Обращение к классу: class="text"</p> 
+            </dd>
+    </dl>
+    <h2>Текст под изменения</h2>
+    <ul>
+        <li>
+            <p style="color: blue;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum reprehenderit sapiente architecto alias nulla nostrum odit tempora vitae dolore molestias aliquam, nemo esse at, error eveniet? Fugit, corporis beatae?
+            </p>
+            <p class="text-gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p id="title-or">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p class="text-viol">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p id="title-yell">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p id="title-yell" class="text-gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p id="title-yell" class="text-viol">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p id="title-or" class="text-gray">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p id="title-or" class="text-viol">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis doloremque eaque aut similique officia aliquam asperiores voluptatum, porro culpa cupiditate fugiat perspiciatis natus, architecto impedit neque est. Architecto, vel.
+            </p>
+        </li>
+    </ul>
 </body>
 </html>
